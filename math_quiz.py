@@ -10,7 +10,7 @@ def RandomInteger_generation(min, max):
     return random.randint(min, max)
 
 
-def Operator_gereration():
+def Operator_generation():
     #Choose randomly among three operator
     """
     There are three random choices of symbols: +, -, *
@@ -36,7 +36,7 @@ def math_quiz():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for _ in range(t_q):
-        n1 = RandomInteger_generation(1, 10); n2 = RandomInteger_generation(1, 5.5); o = Operator_gereration()
+        n1 = RandomInteger_generation(1, 10); n2 = RandomInteger_generation(1, 5.5); o = Operator_generation()
 
         PROBLEM, ANSWER = calculation_answer(n1, n2, o)
         print(f"\nQuestion: {PROBLEM}")
